@@ -1,0 +1,215 @@
+@import "variable";
+@import "mixin";
+
+/*-------------------------
+           MEDIA
+-------------------------*/
+@media (max-width: 1199px){
+    .section {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    .hero-03 .hero-content {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    .scroll-button{
+        display: block;
+    }
+    .menu-toggler.open{
+        left: 105px;
+    }
+    .menu-toggler{
+        display: block;
+        position: fixed;
+        top: 25px;
+        left: 15px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .menu-toggler span{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        text-align: center;
+        border-radius: 10px;
+        line-height: 44px;
+        font-size: 22px;
+    }
+    // header{
+    //     left: -90px;
+    //     transition: all 0.3s ease;
+    // }
+    // header.open{
+    //     left: 0;
+    // }
+    // #main > section {
+    //     padding-left: 0;
+    // }
+    .blog-image::before {
+        height: 24%;
+    }
+    .hero-05 .hero-slide {
+      background-size: auto 100%;
+    }
+    .hero-05 .hero-slide.zoom {
+      background-size: auto 200%;
+    }
+    // .color-scheme.hide{
+    //     right: -50px;
+    // }
+    .color-switcher .pallet-button.hide{
+        right: -60px;
+    }
+    .color-switcher .color-pallet.hide{
+        right: -195px;
+    }
+	.modal-dialog {
+		max-width: 100%;
+  }
+  .services-content h5 {
+    font-size: 16px;
+  }
+
+}
+@media (max-width: 991px) {
+  
+  // header{
+  //   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  //   background-color: #fafafa;
+  // }
+  // header nav a{
+  //   color: #1a1a1a !important;
+  // }
+  .navbar-toggler span{
+    color: #1a1a1a;
+  }
+  .skill-box {
+    margin-top: 60px;
+  }
+  .hero-03 .hero-item{
+    text-align: center;
+    margin-top: 32px;
+  }
+  .hero-03 .hero-item p {
+    margin: auto;
+  }
+  .hero-03 .personal-image{
+    text-align: center;
+  }
+  .hero-03 .hero-image img{
+    width: 45%;
+  }
+  .hero-03 .square{
+    display: none;
+  }
+  .hero-03 .hero-content {
+    // top: calc(50% + 36px);
+    overflow-x: hidden;
+  }
+  // .section {
+  //   padding-right: 1rem;
+  //   padding-left: 1rem;
+  // }
+}
+
+
+@media (max-width: 767px){
+    .social-box{
+        display: none;
+    }
+    .section {
+      padding-right: .5rem;
+      padding-left: .5rem;
+    }
+    .hero-03 .hero-image img{
+      width: 60%;
+    }
+    
+}
+
+@media (max-width: 575px){
+    // .display-table, .display-content {
+    //     display: block;
+    // }
+    .hero-02 .hero-content{
+      padding-left: 2rem;
+    }
+    .about .personal-info span {
+        display: block;
+    }
+    .language-bar .list-inline-item:not(:last-child) {
+        margin-right: .25rem;
+    }
+    #message.toast {
+        top: 18px;
+        left: inherit;
+        font-size: 12px;
+        padding: 3px 0;
+      }
+
+}
+@media (max-width: 380px){
+    #message.toast {
+        top: 60px;
+        left: 15px;
+    }
+}
+
+
+
+
+/*-------------------------
+       MEDIA SCREENS
+-------------------------*/
+@media (max-width: 1199px) {
+    .hero-04 {
+      padding: 0 !important;
+    }
+    .hero-04 .swiper-slide .hero-item-text {
+      margin-left: 90px;
+    }
+  }
+  @media (max-width: 991px) {
+    .hero-04 .hero-left-title {
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+    }
+    .hero-04 .text-swiper.bg-dark {
+      background-color: transparent !important;
+    }
+    .hero-04 .hero-text {
+      position: absolute;
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+    }
+    .hero-04 .hero-text .swiper-slide {
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: 0 !important;
+    }
+    .hero-04 .hero-text .swiper-slide.swiper-slide-active {
+      opacity: 1 !important;
+    }
+    .hero-04 .hero-text .swiper-slide .hero-item-text {
+      max-width: 500px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    .hero-04 .hero-text .swiper-slide .hero-item-text .slider-number {
+      bottom: 0px;
+      left: 5px;
+    }
+    .hero-04 .swiper-buttons {
+      display: none;
+    }
+    .hero-04 .swiper-button-next, .hero-04 .swiper-container-rtl .swiper-button-prev {
+      left: 50%;
+    }
+    .hero-04 .swiper-button-prev, .hero-04 .swiper-container-rtl .swiper-button-next {
+      right: 50%;
+    }
+  }
